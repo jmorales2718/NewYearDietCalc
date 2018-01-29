@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">New Year Diet Calc</string>
+    <string name="action_settings">Settings</string>
+    <string name="cutting_low_fat">Cutting Low Fat: 20f/40c/40p</string>
+    <string name="cutting_low_carb">Cutting Low Carb: 40f/20c/40p</string>
+    <string name="bulking_high_carb">Bulking High Carb: 1g p/lb LBM</string>
+    <string name="bulking_high_fat">Bulking High Fat: 1g p/lb LBM</string>
+    <string name="tvFatGramsHint">Your Grams of Fat</string>
+    <string name="tvCarbGramsHint">Your Grams of Carb</string>
+    <string name="tvProteinGramsHint">Your Grams of Protein</string>
+    <string name="etTDEEHint">Use TDEE Calculator first or Enter Manually.</string>
+    <string name="btnCalculateMacrosText">Calculate Macros</string>
+    <string name="hello">Hello</string>
+    <string name="tvOnboardingOneText">Before you get started we need to go through set up with you.</string>
+    <string name="tvOnboardingOneSwipe">Swipe Left to begin.</string>
+    <string name="metDefaultDeficitHint">Default Caloric Deficit, .2 is 20% less</string>
+    <string name="metDefaultDeficitDescriptionText">Your caloric deficit multiplier will decrease the amount of calories. A number closer to one means less calories, but you usually don\'t want to go higher than 0.25.</string>
+    <string name="metDefaultSurplusHint">Default Caloric Surplus, .05 is 5% added</string>
+    <string name="metDefaultSurplusDescriptionText">Your caloric surplus will increase the amount of calories. As you increase the multiplier more calories will be added, but you usually want to keep it under 0.1.</string>
+    <string name="tvUnitsSettingsText">Units</string>
+    <string name="rbMetricText">Metric</string>
+    <string name="rbImperialText">Imperial</string>
+    <string name="btnFinishText">Finish and Save</string>
+    <string name="tvTDEEHint">Your calculated TDEE will appear here</string>
+    <string name="selectMetricText">Metric</string>
+    <string name="selectImperialText">Imperial</string>
+    <string name="etWeightHint">Enter Your Weight</string>
+    <string name="etBodyFatPercentageHint">Enter Your Bodyfat %</string>
+    <string name="btnCalculateTDEEText">Calculate TDEE</string>
+    <string name="metDefaultDeficitHintSettings">Default Caloric Deficit, .2 is 20% less</string>
+    <string name="metDefaultSurplusHintSettings">Default Caloric Surplus, .05 is 5% added</string>
+    <string name="tvUnitsTextSettings">Units</string>
+    <string name="rbSelectMetricText">Metric</string>
+    <string name="rbSelectImperialText">Imperial</string>
+    <string name="btnSaveSettingsText">Save Changes</string>
+    <string name="btnCancelSettingsText">Cancel Changes</string>
+    <string name="tvSettingsText">Settings</string>
+
+    <string-array name="ActivityLevels">
+        <item>Hours of Exercise per Week</item>
+        <item>Less than 1 hour</item>
+        <item>1-3 hours</item>
+        <item>4-6 hours</item>
+        <item>6+ hours</item>
+    </string-array>
+
+    <string-array name="MacroRatios">
+        <item>@string/cutting_low_fat</item>
+        <item>@string/cutting_low_carb</item>
+        <item>@string/bulking_high_carb</item>
+        <item>@string/bulking_high_fat</item>
+    </string-array>
+</resources>

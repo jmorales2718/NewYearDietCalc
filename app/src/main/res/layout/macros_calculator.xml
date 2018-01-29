@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@color/DarkOrange"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="40"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/tvFatGrams"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/tvFatGramsHint"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvCarbGrams"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/tvCarbGramsHint"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/tvProteinGrams"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="@string/tvProteinGramsHint"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:layout_margin="10dp"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etTDEE"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:hint="@string/etTDEEHint"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:inputType="number"
+        />
+
+    <Spinner
+        android:id="@+id/spPercentageMacrosSelect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:textColor="@color/DarkBlue"
+        android:focusable="false"
+        android:background="#ffffff"
+        android:layout_weight="20"
+        android:layout_margin="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnCalculateMacros"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:layout_margin="10dp"
+        android:text="@string/btnCalculateMacrosText"
+        android:textSize="24sp"
+        android:textColor="@color/DarkBlue"
+        android:background="@color/YellowOrange"
+        />
+
+</LinearLayout>

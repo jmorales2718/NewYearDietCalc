@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:background="@color/YellowOrange"
+                >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_centerInParent="true"
+                  android:weightSum="6"
+                  >
+
+        <TextView
+            android:id="@+id/tvTDEE"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:layout_margin="10dp"
+            android:hint="@string/tvTDEEHint"
+            android:gravity="center"
+            android:textSize="24sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal">
+
+            <RadioButton
+                android:id="@+id/selectMetric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectMetricText"
+                android:textSize="24sp"
+                android:textColor="@color/DarkBlue"
+                android:gravity="center"
+                android:layout_gravity="start"/>
+
+            <RadioButton
+                android:id="@+id/selectImperial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/selectImperialText"
+                android:textSize="24sp"
+                android:textColor="@color/DarkBlue"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                android:layout_gravity="end"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etWeight"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:maxLength="3"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:hint="@string/etWeightHint"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <EditText
+            android:id="@+id/etBodyFatPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:inputType="number"
+            android:maxLength="2"
+            android:background="#ffffff"
+            android:layout_weight="1"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:hint="@string/etBodyFatPercentageHint"/>
+
+        <Spinner
+            android:id="@+id/spActivityMultiplier"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/DarkBlue"
+            android:focusable="false"
+            android:background="#ffffff"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnCalculateTDEE"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="@string/btnCalculateTDEEText"
+            android:textColor="@color/DarkBlue"
+            android:textSize="24sp"
+            android:background="@color/DarkOrange"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

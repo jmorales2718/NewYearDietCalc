@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="jmmacbook.newyeardietcalc.com.jmmacbook.newyeardietcalc.SettingsActivity"
+    android:background="@color/YellowOrange"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarSettings"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="#ffffff"
+        app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tvSettingsText"
+        android:textSize="22sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/line_separator"
+        android:layerType="software"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metDefaultDeficit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/metDefaultDeficitHintSettings"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textColor="@color/DarkerBlue"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/metDefaultSurplus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="@string/metDefaultSurplusHintSettings"
+        android:inputType="numberDecimal"
+        android:maxLength="4"
+        android:textColor="@color/DarkerBlue"
+        app:met_floatingLabel="normal"
+        app:met_floatingLabelTextSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvUnitsSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/tvUnitsTextSettings"
+        android:textSize="16sp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/line_separator"
+        android:layerType="software"
+        />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/rgUnits"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:gravity="top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        >
+
+        <RadioButton
+            android:id="@+id/rbSelectMetric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbSelectMetricText"
+            android:textSize="12sp"
+            android:textColor="@color/DarkBlue"
+            />
+
+        <RadioButton
+            android:id="@+id/rbSelectImperial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbSelectImperialText"
+            android:textSize="12sp"
+            android:textColor="@color/DarkBlue"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_margin="10dp"
+            >
+            <Button
+                android:id="@+id/btnSaveSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:text="@string/btnSaveSettingsText"
+                android:textSize="18sp"
+                android:background="@color/DarkBlue"
+                android:textColor="@color/White"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40"
+                android:visibility="invisible"
+                />
+            <Button
+                android:id="@+id/btnCancelSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="30"
+                android:text="@string/btnCancelSettingsText"
+                android:textSize="18sp"
+                android:background="@color/DarkBlue"
+                android:textColor="@color/White"
+                />
+        </LinearLayout>
+</LinearLayout>
